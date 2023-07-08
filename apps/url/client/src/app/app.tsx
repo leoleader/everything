@@ -5,16 +5,22 @@ import axios from 'axios';
 import {Container, Heading} from '@chakra-ui/react';
 import {useCallback, useState } from 'react';
 
-import Shortened from './types';
+import {Shortened} from './types';
 import UrlList from "./url-list";
 import ShortenUrlForm from './shorten-url-form';
 
-
+// The App component contains all the other components, 
+// namely the Container and Heading from chakra, a ShortenedUrlForm 
+// which is where the user inputs and submits their urls and 
+// UrlList which is where the generated urls are displayed.   
 
 export function App() {
 
   const [urls, setUrls] = useState<Array<Shortened>>([]);
 
+  // requestShortUrl - a function that sends the orignal url
+  // to our backend and recieves the original along with the shortened
+  // version in response. 
   const requestShortUrl = useCallback(
     async (inputUrl: string) => {
       const response = await axios.post(`http://localhost:3333/api/shorten`, {
@@ -30,7 +36,7 @@ export function App() {
 
   return (
     <Container bg="black" maxWidth="4xl" minH="2xl" marginBlock={12} textAlign="center">
-      <Heading pt="4" color="#FFE81F">McCann's URL Shortener</Heading>
+      <Heading pt="4" fontSize="6xl" font-family = "sans-serif" color="#FFE81F">McCann's  Url  Shortener</Heading>
       <ShortenUrlForm requestShortUrl={requestShortUrl}/>
       <UrlList urls={urls} />
     </Container>

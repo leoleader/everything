@@ -1,9 +1,9 @@
 import { Link, ListItem, UnorderedList, Text } from '@chakra-ui/react';
-import Shortened from './types';
+import {UrlListProps} from './types';
 
-type UrlListProps = {
-  urls: Array<Shortened>;
-};
+// The UrlList component takes an Array<Shortened> urls as input,
+// and displays them as an UnorderedList by mapping each Shortened
+// to a ListItem. 
 
 export const UrlList: React.FC<UrlListProps> = ({ urls }) => {
   return (

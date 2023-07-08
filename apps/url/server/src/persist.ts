@@ -2,10 +2,10 @@ import sqlite3 from 'sqlite3';
 import { open } from 'sqlite';
 
 /**
- * Initally undefined, but we will use this mutable reference to cache the connection for future use
  * Our database contains a single table: 'url'
  * A url has two fields: id (Int) and original (String)
  */
+
 let _db;
 async function getDB() {
   if (_db == null) {
@@ -25,7 +25,7 @@ async function getDB() {
 
 /**
  * Produces the shortened form of a given URL
- * Effect: Effect: updates the db to record the url and its shortened id.
+ * Effect: updates the db to record the url and its shortened id.
  */
 
 async function shortenUrl(url: string): Promise<string> {
@@ -38,6 +38,11 @@ async function shortenUrl(url: string): Promise<string> {
 
   return short;
 }
+
+/**
+ * Produces the original url from the id of the given shortened url.
+ * Effect: Gets the original url with the given id from the database. 
+ */
 
 async function lookupURL(shortenedID: number) {
   const db = await getDB();

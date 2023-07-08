@@ -1,6 +1,5 @@
 Hey what's up you guys welcome to my URL project submission
 
-
 3 things I would do to improve the quality of the codebase:
 - Adding both client and server side input verifiers
 - Adding thorough documentation as to improve the codes readability
@@ -8,5 +7,6 @@ Hey what's up you guys welcome to my URL project submission
 
 Epilogue Additions:
 - URL verifiers, only accepts urls of valid form that lead to safe websites
-- Star Wars Stylization, adding custom fonts and images
-- Documentation with consistent form
+- Star Wars Stylizatio (the growing list of urls generated reminded me of the intro to the movies), adding custom fonts with fontsource and overriding default Chakra theming
+- Thorough Documentation with consistent structure
+- A bit of refactoring, putting all the themes in the theme.ts file

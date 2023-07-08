@@ -3549,6 +3549,11 @@
   resolved "https://registry.yarnpkg.com/@faker-js/faker/-/faker-7.6.0.tgz#9ea331766084288634a9247fcd8b84f16ff4ba07"
   integrity sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==
 
+"@fontsource/gothic-a1@^5.0.4":
+  version "5.0.4"
+  resolved "https://registry.yarnpkg.com/@fontsource/gothic-a1/-/gothic-a1-5.0.4.tgz#a4931d3fea356de50f24d382cb80a90d929f9840"
+  integrity sha512-15WiEnQCegsFXe9bSnatS+1pIY+z9KuFgGuwEK4lZyqra7c2CdEZJkH3MrSAAggH6t82P1DmvxqKgNCFannj5g==
+
 "@fontsource/monofett@^5.0.4":
   version "5.0.4"
   resolved "https://registry.yarnpkg.com/@fontsource/monofett/-/monofett-5.0.4.tgz#5698182fd9cce8021bab29efe72fa5acf858ff9c"

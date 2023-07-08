@@ -1,7 +1,12 @@
 import { render, screen } from '@testing-library/react';
 
 import UrlList from './url-list';
-import Shortened from './types';
+import {Shortened} from './types';
+
+// React Component Testing
+
+
+// UrlList Component Test
 
 describe('UrlList', () => {
   it('should render successfully', () => {

@@ -1,10 +1,10 @@
 import {Button, Input} from '@chakra-ui/react'
 import { FormEvent, useCallback, useState} from 'react'
+import { ShortenUrlFormProps } from './types';
 
-type ShortenUrlFormProps = {
-    requestShortUrl: (original: string) => Promise<void>;
-  };
-
+  // The ShortenUrlForm component takes function requestShortUrl as input
+  // and on submit, uses this function to generate a shortened url. The form
+  // itself is comprised of a chakra button and input. 
   export const ShortenUrlForm: React.FC<ShortenUrlFormProps> = ({
     requestShortUrl,
   }) => {
@@ -29,7 +29,7 @@ type ShortenUrlFormProps = {
           onChange={(e) => {
             setInputUrl(e.target.value);
           }}
-          placeholder="https://whatever.com"
+          placeholder="http://galaxyfarfaraway.com"
         />
         <Button id="submit-btn" type="submit" color="black" size="lg">
           Generate

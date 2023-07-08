@@ -1,6 +1,11 @@
 import request from 'supertest';
 import { createApp } from './app';
 
+/**
+ * Testing for Backend App
+ * - Post response status is 201
+ * - ShortenUrl is called during Post response, storing url
+ */
 describe('App', () => {
   let app;
   let urls: Array<string>;
