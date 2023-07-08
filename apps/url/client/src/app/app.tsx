@@ -9,6 +9,8 @@ import {Shortened} from './types';
 import UrlList from "./url-list";
 import ShortenUrlForm from './shorten-url-form';
 
+import stars from'/public/images/stars.jpeg';
+
 // The App component contains all the other components, 
 // namely the Container and Heading from chakra, a ShortenedUrlForm 
 // which is where the user inputs and submits their urls and 
@@ -35,7 +37,7 @@ export function App() {
   );
 
   return (
-    <Container bg="black" maxWidth="4xl" minH="2xl" marginBlock={12} textAlign="center">
+    <Container bgImage={stars} w="100%" maxWidth="full" minH="2xl" marginBlock={12} textAlign="center">
       <Heading pt="4" fontSize="6xl" font-family = "sans-serif" color="#FFE81F">McCann's  Url  Shortener</Heading>
       <ShortenUrlForm requestShortUrl={requestShortUrl}/>
       <UrlList urls={urls} />

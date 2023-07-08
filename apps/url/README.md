@@ -6,7 +6,6 @@ Hey what's up you guys welcome to my URL project submission
 - Writing additional tests for possible edge cases
 
 Epilogue Additions:
-- URL verifiers, only accepts urls of valid form that lead to safe websites
-- Star Wars Stylizatio (the growing list of urls generated reminded me of the intro to the movies), adding custom fonts with fontsource and overriding default Chakra theming
+- Star Wars Stylization (the growing list of urls generated reminded me of the intro to the movies), adding custom fonts with fontsource, images, and overriding default Chakra theming
 - Thorough Documentation with consistent structure
 - A bit of refactoring, putting all the themes in the theme.ts file

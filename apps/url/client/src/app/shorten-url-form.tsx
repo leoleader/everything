@@ -25,13 +25,15 @@ import { ShortenUrlFormProps } from './types';
           marginBlock={4}
           color="#FFE81F"
           value={inputUrl}
+          maxWidth="4xl"
+          focusBorderColor = "#FFE81F"
           borderColor="#FFE81F"
           onChange={(e) => {
             setInputUrl(e.target.value);
           }}
           placeholder="http://galaxyfarfaraway.com"
         />
-        <Button id="submit-btn" type="submit" color="black" size="lg">
+        <Button ml ="5"  id="submit-btn" type="submit" color="black" size="lg">
           Generate
         </Button>
       </form>

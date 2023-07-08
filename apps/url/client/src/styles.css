@@ -2,11 +2,13 @@
 
 
 html {
+    background-image: url("/public/images/stars.jpeg");
     background-color: black;
 }
 
 body {
-    background: black;
+    background-image: url("/public/images/stars.jpeg");
+
 }
 
 h2 {
