@@ -10,7 +10,8 @@ export default defineConfig({
     port: 4200,
     host: 'localhost',
     fs: {
-      allow: ["/Users/dylanmccann/code4comm/everything/node_modules/@fontsource"]
+      allow: ["/Users/dylanmccann/code4comm/everything/node_modules/@fontsource",
+    "/Users/dylanmccann/code4comm/everything/apps/url/client"]
     }
   },
 
